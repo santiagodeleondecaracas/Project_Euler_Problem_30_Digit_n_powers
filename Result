@@ -5,6 +5,7 @@ let numberCaseString=numberCase.toString();
 let succesionOfNumbers=0;
 let summatoryOfNumberSucessions=0;
 let overall=0;
+let upperBoundLimit=6*9**5;
 
     while(numberCase<100000000){
       numberCaseString=numberCase.toString();
