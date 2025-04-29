@@ -7,7 +7,7 @@ let summatoryOfNumberSucessions=0;
 let overall=0;
 let upperBoundLimit=6*9**5;
 
-    while(numberCase<100000000){
+    while(numberCase<upperBoundLimit){
       numberCaseString=numberCase.toString();
       for(let i =0;i<numberCaseString.length;i++){
                 succesionOfNumbers=Number(numberCaseString[i])**power;
