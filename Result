@@ -1,0 +1,31 @@
+function digitnPowers(n) {
+    let numberCase=0;
+let power=n;
+let numberCaseString=numberCase.toString();
+let succesionOfNumbers=0;
+let summatoryOfNumberSucessions=0;
+let overall=0;
+
+    while(numberCase<100000000){
+      numberCaseString=numberCase.toString();
+      for(let i =0;i<numberCaseString.length;i++){
+                succesionOfNumbers=Number(numberCaseString[i])**power;
+                summatoryOfNumberSucessions=summatoryOfNumberSucessions+succesionOfNumbers;  
+                };
+
+              if(summatoryOfNumberSucessions==numberCase){
+                  overall = overall + summatoryOfNumberSucessions;
+
+              };
+        numberCase = numberCase+1;
+        summatoryOfNumberSucessions=0;
+        numberCaseString='';
+        succesionOfNumbers=0;
+        
+    };
+
+    return overall-1;
+  
+};
+
+console.log(digitnPowers(2));
